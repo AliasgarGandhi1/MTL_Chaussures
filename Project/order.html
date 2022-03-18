@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="Images/icons/tab_img_32.png" style="background-color: white;" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/pagestyle.css">
+</head>
+<body onload="header()">
+    <header id="head_main">
+      <div id="header-flex">
+        <span id="header-flex">
+            <a href="home.html"><img id="logo" src="Images/icons/mtl_logo2.gif"></a>
+            <div>
+              <input id="txt-search" type="text" placeholder="Search"/>
+              <input type="button" id="btn-search"/>
+            </div>
+        </span>
+        <span id="header-flex">
+            <a href="addToCart.html">
+              <img id="img-header" class="cart" src="Images/icons/cart.ico" alt="">
+            </a>
+            <a href="">
+              <img id="img-header" src="Images/icons/menu_vertical.png" alt="">
+            </a>
+        </span>
+      </div>
+        <nav class="navbar .navbar-expand-lg fixed-top">
+          <ul class="navbar-nav">
+                <li class="menu"><a href="home.html">Home</a></li>
+                <li class="menu"><a href="men.html">Men</a></li>
+                <li class="menu"><a href="women.html">Women</a></li>
+                <li class="menu"><a href="kids.html">Kids</a></li>
+                <li class="menu"><a href="order.html">Orders</a></li>
+                <li class="menu"><a href="wishlist.html">Wishlist</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="order-container">
+        <div class="filter-container parent-filter-container">
+            <div>
+                <h2>Filters</h2>
+                <hr size="1px" color="#ccc">
+            </div>
+
+            <div  class="filter-container" >
+                <h3>ORDER STATUS</h3>
+                <div>
+                    <input type="checkbox" name="order_status1" id="on_the_way" value="on_the_way">
+                    <label for="on_the_way">On the way</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="order_status2" id="delivered" value="delivered">
+                    <label for="delivered">Delivered</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="order_status1" id="cancelled" value="cancelled">
+                    <label for="cancelled">Cancelled</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="order_status1" id="returned" value="returned">
+                    <label for="returned">Returned</label>
+                </div>
+            </div>
+            
+            <div>
+                <hr size="1px" color="#ccc">
+            </div>
+
+            <div  class="filter-container" >
+                <h3>ORDER TIME</h3>
+                <div>
+                    <input type="checkbox" name="order_time1" id="last_30_days" value="last_30_days">
+                    <label for="last_30_days">Last 30 days</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="order_time2" id="2021" value="2021">
+                    <label for="2021">2021</label>    
+                </div>
+                <div>
+                    <input type="checkbox" name="order_time3" id="2020" value="2020">
+                    <label for="2020">2020</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="order_time4" id="2019" value="2019">
+                    <label for="2019">2019</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="order_time5" id="older" value="older">
+                    <label for="older">Older</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="order-item-container">
+            <div id="search-order-container">
+                <input id="txtSearchOrder" type="text" placeholder="Search your orders here" />
+                <button id="btSearchOrder"><img src="Images/icons/search_order_icon_32.png" alt="" srcset="">Search Order</button>
+            </div>
+
+            <div id="order-item-details" class="parent-filter-container outer-space">
+                <div id="order-item-details">
+                    <img class="order-img" src="Images/items/image1.png" alt="" srcset="">
+                </div>
+                <div class="order-description">
+                    <a href="product.html">
+                        <h3 id="product-name">Puma Black and White Sneakers</h3>
+                    </a>
+                    <p>Color: Balck & White</p>
+                    <p>Seller: Puma Pv. Ltd.</p>
+                </div>
+                <div id="order-item-details" class="order-description">
+                    <h3>$49.99</h3>
+                </div>
+                <div class="order-description">
+                    <h3>Delivered on Mar 15, 2022</h3>
+                    <p>Your item has been delivered</p>
+                </div>
+            </div>
+
+            <div id="order-item-details" class="parent-filter-container outer-space">
+                <div id="order-item-details">
+                    <img class="order-img" src="Images/items/image1.png" alt="" srcset="">
+                </div>
+                <div class="order-description">
+                    <a href="product.html">
+                        <h3 id="product-name">Puma Black and White Sneakers</h3>
+                    </a>
+                    <p>Color: Balck & White</p>
+                    <p>Seller: Puma Pv. Ltd.</p>
+                </div>
+                <div id="order-item-details" class="order-description">
+                    <h3>$49.99</h3>
+                </div>
+                <div class="order-description">
+                    <h3>Delivered on Mar 15, 2022</h3>
+                    <p>Your item has been delivered</p>
+                </div>
+            </div>
+
+            <div id="order-item-details" class="parent-filter-container outer-space">
+                <div id="order-item-details">
+                    <img class="order-img" src="Images/items/image1.png" alt="" srcset="">
+                </div>
+                <div class="order-description">
+                    <a href="product.html">
+                        <h3 id="product-name">Puma Black and White Sneakers</h3>
+                    </a>
+                    <p>Color: Balck & White</p>
+                    <p>Seller: Puma Pv. Ltd.</p>
+                </div>
+                <div id="order-item-details" class="order-description">
+                    <h3>$49.99</h3>
+                </div>
+                <div class="order-description">
+                    <h3>Delivered on Mar 15, 2022</h3>
+                    <p>Your item has been delivered</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="foot_main flex-container">
+        <ul class="ul-foot">
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#">T&C</a></li>
+          <li> <a href="#">Site Map</a></li>
+        </ul>
+      <div class="center">
+          <h3 class="ft_heading">Community</h3>
+          <ul class="flex-container">
+              <li><a href="#"><img class="community" src="Images/icons/facebook_logo.png" alt="Facebook"/></a></li>
+              <li><a href="#"><img class="community" src="Images/icons/instagram_logo.png" alt="Instagram"/></a></li>
+              <li><a href="#"><img class="community" src="Images/icons/twitter_logo.png" alt="Twitter"/></a></li>
+              <li><a href="#"><img class="community" src="Images/icons/linkedin_logo.png" alt="LinkedIn"/></a></li>
+          </ul>
+      </div>
+      <div class="center">
+          <h3 class="ft_heading">Support</h3>
+            <ul class="ul-foot">
+                <li>Support Center</li>
+                <li>Status Page</li>
+            </ul>
+      </div>
+</footer>
+</body>
+</html>

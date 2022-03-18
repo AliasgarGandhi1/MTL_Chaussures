@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="Images/icons/tab_img_32.png" style="background-color: white;" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/pagestyle.css">
+</head>
+<body onload="header()">
+    <header id="head_main">
+      <div id="header-flex">
+        <span id="header-flex">
+            <a href="home.html"><img id="logo" src="Images/icons/mtl_logo2.gif"></a>
+            <div>
+              <input id="txt-search" type="text" placeholder="Search"/>
+              <input type="button" id="btn-search"/>
+            </div>
+        </span>
+        <span id="header-flex">
+            <a href="addToCart.html">
+              <img id="img-header" class="cart" src="Images/icons/cart.ico" alt="">
+            </a>
+            <a href="">
+              <img id="img-header" src="Images/icons/menu_vertical.png" alt="">
+            </a>
+        </span>
+      </div>
+        <nav class="navbar .navbar-expand-lg fixed-top">
+          <ul class="navbar-nav">
+                <li class="menu"><a href="home.html">Home</a></li>
+                <li class="menu"><a href="men.html">Men</a></li>
+                <li class="menu"><a href="women.html">Women</a></li>
+                <li class="menu"><a href="kids.html">Kids</a></li>
+                <li class="menu"><a href="order.html">Orders</a></li>
+                <li class="menu"><a href="wishlist.html">Wishlist</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="carousel" aria-label="Gallery">
+        <ol class="carousel__viewport">
+            <li id="carousel__slide1"
+                tabindex="0"
+                class="carousel__slide">
+              <div class="carousel__snapper">
+                <img id="carousel_slide1" class="carousel-img" src="Images/bgimages/hp_img3.jpg" alt="" srcset="">
+              </div>
+            </li>
+            <li id="carousel__slide2"
+                tabindex="0"
+                class="carousel__slide">
+              <div class="carousel__snapper">
+                <img id="carousel_slide2" class="carousel-img" src="Images/bgimages/hp_img4.jpg" alt="" srcset="">
+              </div>
+            </li>
+            <li id="carousel__slide3"
+                tabindex="0"
+                class="carousel__slide">
+              <div class="carousel__snapper">
+                <img id="carousel_slide3" class="carousel-img" src="Images/bgimages/hp_img5.jpg" alt="" srcset="">
+              </div>
+            </li>
+            <li id="carousel__slide4"
+                tabindex="0"
+                class="carousel__slide">
+              <div class="carousel__snapper">
+                <img id="carousel_slide4" class="carousel-img" src="Images/bgimages/hp_img7.jpg" alt="" srcset="">
+              </div>
+            </li>
+          </ol>
+          <aside class="carousel__navigation">
+            <ol class="carousel__navigation-list">
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide1"
+                   class="carousel__navigation-button">Go to slide 1</a>
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide2"
+                   class="carousel__navigation-button">Go to slide 2</a>
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide3"
+                   class="carousel__navigation-button">Go to slide 3</a>
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide4"
+                   class="carousel__navigation-button">Go to slide 4</a>
+              </li>
+            </ol>
+          </aside> 
+    </section>
+    <div class="container">
+        <div class="inner-div">
+            <div id="item-heading-div">
+                <h1 class="title">Our Products</h1>
+                <p>Tommy is in this season, but you know that. Get your hands on the Tommy Jeans Iconic Sock Runner and enjoy the compliments. Branding finishes this sporty, navy sneaker.</p>
+            </div>
+            <div class="flex-container">
+                <div class="items">
+                    <img src="Images/items/image1.png" alt="item1" srcset=""/>
+                    <div class="item-div">
+                        <h2>Puma Sneakers</h2>
+                        <h3>$80</h3>
+                    </div>
+                </div>
+                <div class="items">
+                  <img src="Images/items/image1.png" alt="item1" srcset=""/>
+                  <div class="item-div">
+                      <h2>Puma Sneakers</h2>
+                      <h3>$80</h3>
+                  </div>
+                </div>
+                <div class="items">
+                  <img src="Images/items/image1.png" alt="item1" srcset=""/>
+                  <div class="item-div">
+                      <h2>Puma Sneakers</h2>
+                      <h3>$80</h3>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="contact flex-container">
+        <div>
+          <h3 id="getInTouch1">CALL TO ACTION</h3>
+          <h1 id="getInTouch2">Get a Free Trial</h1>
+        </div>
+        <div>
+          <button id="btAppointment">APPOINTMENT</button>
+          <button id="btGetQuote">GET A QUOTE</button>
+        </div>
+      </div>
+    
+      <div class="container">
+        <div class="inner-div">
+            <div id="item-heading-div">
+                <h1 class="title">Trending Products</h1>
+                <p>The Dr. Martens 1461 3 Eye Shoe is formed from a durable, strong and comfortable silhouette made for everyday style! Thick AirWair outsole and yellow welt stitching complete this fit.</p>
+            </div>
+            <div class="flex-container">
+                <div class="items-trending">
+                    <img src="Images/items/image1.png" alt="item1" srcset=""/>
+                    <div class="item-div">
+                        <h2>Puma Sneakers</h2>
+                        <h3>$80</h3>
+                        <button id="btAddToCart">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="items-trending">
+                  <img src="Images/items/image1.png" alt="item1" srcset=""/>
+                  <div class="item-div">
+                      <h2>Puma Sneakers</h2>
+                      <h3>$80</h3>
+                      <button id="btAddToCart">Add To Cart</button>
+                  </div>
+                </div>
+                <div class="items-trending">
+                  <img src="Images/items/image1.png" alt="item1" srcset=""/>
+                  <div class="item-div">
+                      <h2>Puma Sneakers</h2>
+                      <h3>$80</h3>
+                      <button id="btAddToCart">Add To Cart</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="main-container">
+        <div class="numbers-container">
+            <div style="position: relative;">
+              <h1>MTL</h1>
+              <h3>CHAUSSEAURS</h3>
+            </div>
+            <div class="sub-number-container">
+              <div class="child-number-container">
+                <b class="text-color text-weight">25<sup>+</sup></b>
+                <p class="text-color text-size">Complete Projects</p>
+              </div>
+              <div class="child-number-container">
+                <b class="text-color text-weight">58<sup>+</sup></b>
+                <p class="text-color text-size">Awards</p>
+              </div class="child-number-container">
+              <div class="child-number-container">
+                <b class="text-color text-weight">58<sup>+</sup></b>
+                <p class="text-color text-size">Experience</p>
+              </div>
+              <div class="child-number-container">
+                <b class="text-color text-weight">96<sup>+</sup></b>
+                <p class="text-color text-size">Team Members</p>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="inner-div">
+            <div id="item-heading-div">
+                <h1 class="title">Top Brands</h1>
+                <p>Nike's Shoes are one of the best selling shoes. On the second place there is Adidas which is slightly cheaper and stylish as well.
+                  At the End our last brand name: Gucci. Gucci shoes are very expencive but if you wear it you never gona regret.
+                </p>
+            </div>
+            <div class="top-brand-container">
+              <div>
+                <a href=""><img class="brand-big-img" src="Images/bgimages/hp_top_brand1.jpg" alt="" srcset=""></a>
+              </div>
+              <div class="small-img-container">
+                <a href=""><img class="brand-small-img" src="Images/bgimages/hp_top_brand2.jpg" alt="" srcset=""></a>
+                <a href=""><img class="brand-small-img" src="Images/bgimages/hp_top_brand3.jpg" alt="" srcset=""></a>
+              </div>
+            </div>
+        </div>
+      </div>
+    <footer class="foot_main flex-container">
+              <ul class="ul-foot">
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#">T&C</a></li>
+                <li> <a href="#">Site Map</a></li>
+              </ul>
+            <div class="center">
+                <h3 class="ft_heading">Community</h3>
+                <ul class="flex-container">
+                    <li><a href="#"><img class="community" src="Images/icons/facebook_logo.png" alt="Facebook"/></a></li>
+                    <li><a href="#"><img class="community" src="Images/icons/instagram_logo.png" alt="Instagram"/></a></li>
+                    <li><a href="#"><img class="community" src="Images/icons/twitter_logo.png" alt="Twitter"/></a></li>
+                    <li><a href="#"><img class="community" src="Images/icons/linkedin_logo.png" alt="LinkedIn"/></a></li>
+                </ul>
+            </div>
+            <div class="center">
+                <h3 class="ft_heading">Support</h3>
+                  <ul class="ul-foot">
+                      <li>Support Center</li>
+                      <li>Status Page</li>
+                  </ul>
+            </div>
+    </footer>
+</body>
+</html>
