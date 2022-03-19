@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+Name: Chintan Anandkumar Patel
+Student_ID: 2024318
+-->
+
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="./js/product.js"></script>  
+    
+</head>
+<title>
+</title>
+<style>
+    button{
+        padding:0px;
+        margin: 0px;
+        word-spacing: 0px;
+    }
+</style>
+
+<body>
+    <nav class="navbar"></nav>    
+    <script src="js/nav.js"></script>
+    <div id="Men" style="display: block;">
+        <div class="p-container">
+        <div class="w3-bar w3-black">
+            <button class="w3-bar-item w3-button" onclick="openMenShoes('mFilpflops')">Filpflops</button>
+            <button class="w3-bar-item w3-button" onclick="openMenShoes('mLoafers')">Loafers</button>
+            <button class="w3-bar-item w3-button" onclick="openMenShoes('mOxford')">Oxford</button>
+            <button class="w3-bar-item w3-button" onclick="openMenShoes('mHiking')">Hiking</button>
+            <button class="w3-bar-item w3-button" onclick="openMenShoes('mAthletic')">Athletic</button>
+        </div>
+        
+            <div style="display: block;" id="mFilpflops" class="p-container menshoes"> <section class="product">
+                filp flops
+            </div>
+            <div style="display: none;" id="mLoafers" class="p-container menshoes">Loafers</div>
+            <div style="display: none;" id="mOxford" class="p-container menshoes">Oxford</div>
+            <div style="display: none;" id="mHiking" class="p-container menshoes">Hiking</div>            
+            <div style="display: none;" id="mAthletic" class="p-container menshoes">Athletic</div>
+        </div>
+    </div>
+    <div id="Women" style="display: none;">
+        <div class="p-container">
+        <div class="w3-bar w3-black">
+            <button class="w3-bar-item w3-button" onclick="openWomenShoes('wFilpflops')">Filpflops</button>
+            <button class="w3-bar-item w3-button" onclick="openWomenShoes('wLoafers')">Loafers</button>
+            <button class="w3-bar-item w3-button" onclick="openWomenShoes('wOxford')">Oxford</button>
+            <button class="w3-bar-item w3-button" onclick="openWomenShoes('wHiking')">Hiking</button>
+            <button class="w3-bar-item w3-button" onclick="openWomenShoes('wAthletic')">Athletic</button>
+        </div>
+        
+            <div style="display: block;" id="wFilpflops" class="p-container womenshoes">Filpflops</div>
+            <div style="display: none;" id="wLoafers" class="p-container womenshoes">Loafers</div>
+            <div style="display: none;" id="wOxford" class="p-container womenshoes">Oxford</div>
+            <div style="display: none;" id="wAthletic" class="p-container womenshoes">Athletic</div>
+            <div style="display: none;" id="wHiking" class="p-container womenshoes">Hiking</div>
+            <div style="display: none;" id="wAthletic" class="p-container womenshoes">Athletic</div>
+        </div>
+    </div>
+    <div id="Kids" style="display: none;">
+        <div class="p-container">
+            <div class="w3-bar w3-black">
+            <button class="w3-bar-item w3-button" onclick="openKidsShoes('kFilpflops')">Filpflops</button>
+            <button class="w3-bar-item w3-button" onclick="openKidsShoes('kLoafers')">Loafers</button>
+            <button class="w3-bar-item w3-button" onclick="openKidsShoes('kOxford')">Oxford</button>
+            <button class="w3-bar-item w3-button" onclick="openKidsShoes('kHiking')">Hiking</button>
+            <button class="w3-bar-item w3-button" onclick="openKidsShoes('kAthletic')">Athletic</button>
+        </div>
+        
+            <div style="display: block;" id="kFilpflops" class="p-container kidsshoes">Filpflops</div>
+            <div style="display: none;" id="kLoafers" class="p-container kidsshoes">Loafers</div>
+            <div style="display: none;" id="kOxford" class="p-container kidsshoes">Oxford</div>
+            <div style="display: none;" id="kAthletic" class="p-container kidsshoes">Athletic</div>
+            <div style="display: none;" id="kHiking" class="p-container kidsshoes">Hiking</div>
+            <div style="display: none;" id="kAthletic" class="p-container kidsshoes">Athletic</div>
+        </div>
+    </div>
+   
+    <footer></footer>
+    <script src="js/footer.js"></script>
+</body>  
+<link rel="stylesheet" href="./css/product.css">
+</html>
