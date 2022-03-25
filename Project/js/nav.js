@@ -5,7 +5,7 @@ const createNav = ()=>{
     <header id="head_main">
         <div id="header-flex">
         <span id="header-flex">
-            <a href="home.html"><img id="logo" src="Images/icons/brand-logo.gif"></a>
+            <a href="home.html"><img id="logo" src="../Images/icons/brand-logo.gif"></a>
             <div>
                 <input id="txt-search" type="text" placeholder="Search"/>
                 <input type="button" id="btn-search"/>
