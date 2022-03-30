@@ -8,15 +8,16 @@ Student_ID: 2024318
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <script type="text/javascript" src="./js/product.js"></script>
-
+    <link rel="stylesheet" href="styles/menu.css">
 </head>
 <title></title>
 <style></style>
 
 <body>
-    <nav class="navbar"></nav>
-    <script src="js/nav.js"></script>
-    <div id="Men" style="display: block;">
+    <header></header>
+    <script src="js/header.js"></script>
+
+    <div id="Men" style="display: flex;">
         <div class="p-container">
             <div class="p-bar w3-black">
                 <button class="p-bar-item w3-button" onclick="openMenShoes('mFilpflops')"><p>Filpflop</p></button>
@@ -26,7 +27,7 @@ Student_ID: 2024318
                 <button class="p-bar-item w3-button" onclick="openMenShoes('mAthletic')"><p>Athletic</p></button>
             </div>
 
-            <div style="display: block;" id="mFilpflops" class="p-container menshoes">
+            <div style="display: flex;" id="mFilpflops" class="p-container menshoes">
                 <div class="card">
                     <img class="product-img" src="Images/FlipFlops/Filpflops1.jpg" alt="Avtar" style="width:100%">
                     <div class="card-info">

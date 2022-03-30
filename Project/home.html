@@ -4,13 +4,52 @@
     <title>Home</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Buy your first pair of shoes from MTL_Chaussures. You will never forget us.">
+    <meta name="author" content="Aliasgar Gandhi">
     <link rel="shortcut icon" href="Images/icons/tab_img_32.png" style="background-color: white;" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/verticle_menu.js"></script>
     <link rel="stylesheet" href="styles/pagestyle.css">
+    <link rel="stylesheet" href="styles/menu.css">
 </head>
 <body>
-    <header></header>
-    <script src="js/header.js"></script>
+  <header id="head_main">
+    <div id="header-flex">
+      <span id="header-flex">
+          <a href="home.html"><img id="logo" src="Images/icons/mtl_logo2.gif"></a>
+          <div>
+              <input id="txt-search" type="text" placeholder="Search"/>
+              <input type="button" id="btn-search"/>
+          </div>
+      </span>
+      <span id="header-flex">
+        <div class="">
+          <button id="btVerticleMenu">
+            <img id="img-header" src="Images/icons/menu_vertical.png" alt="">
+          </button>
+          <div id="VMenu" class="verticle-menu">
+            <a href="#" class="">Login</a>
+            <a href="#" class="">Sign Up</a>
+            <a href="#" class="">Contact Us</a>
+            <a href="#" class="">About Us</a>
+         </div>
+        </div>
+        <a href="addToCart.html">
+            <img id="img-header" class="cart" src="Images/icons/cart.ico" alt="">
+        </a>
+      </span>
+    </div>
+      <nav class="navbar .navbar-expand-lg fixed-top">
+        <ul class="navbar-nav">
+            <li class="menu"><a href="home.html">Home</a></li>
+            <li class="menu"><a href="product.html">Men</a></li>
+            <li class="menu"><a href="women.html">Women</a></li>
+            <li class="menu"><a href="kids.html">Kids</a></li>
+            <li class="menu"><a href="order.html">Orders</a></li>
+            <li class="menu"><a href="wishlist.html">Wishlist</a></li>
+        </ul>
+      </nav>
+  </header>        
 
     <section class="carousel" aria-label="Gallery">
         <ol class="carousel__viewport">
@@ -73,24 +112,33 @@
             <div class="flex-container">
                 <div class="items">
                     <img src="Images/items/image1.png" alt="item1" srcset=""/>
-                    <div class="item-div">
-                        <h2>Puma Sneakers</h2>
-                        <h3>$80</h3>
+                    <div class="item-div">     
+                      <div class="flex">  
+                        <a href=""><h2>Puma Sneakers</h2></a>
+                        <span class="heart"></span>
+                      </div> 
+                      <h3>$80</h3>
                     </div>
                 </div>
                 <div class="items">
                   <img src="Images/items/image1.png" alt="item1" srcset=""/>
-                  <div class="item-div">
-                      <h2>Puma Sneakers</h2>
+                    <div class="item-div">     
+                      <div class="flex">  
+                        <a href=""><h2>Puma Sneakers</h2></a>
+                        <span class="heart"></span>
+                      </div> 
                       <h3>$80</h3>
-                  </div>
+                    </div>
                 </div>
                 <div class="items">
                   <img src="Images/items/image1.png" alt="item1" srcset=""/>
-                  <div class="item-div">
-                      <h2>Puma Sneakers</h2>
+                    <div class="item-div">     
+                      <div class="flex">  
+                        <a href=""><h2>Puma Sneakers</h2></a>
+                        <span class="heart"></span>
+                      </div> 
                       <h3>$80</h3>
-                  </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -113,29 +161,38 @@
                 <p>The Dr. Martens 1461 3 Eye Shoe is formed from a durable, strong and comfortable silhouette made for everyday style! Thick AirWair outsole and yellow welt stitching complete this fit.</p>
             </div>
             <div class="flex-container">
-                <div class="items-trending">
+                <div class="items-trending items">
                     <img src="Images/items/image1.png" alt="item1" srcset=""/>
                     <div class="item-div">
-                        <h2>Puma Sneakers</h2>
-                        <h3>$80</h3>
+                      <div class="flex">  
+                        <a href=""><h2>Puma Sneakers</h2></a>
+                        <span class="heart"></span>
+                      </div> 
+                        <h3 style="margin-top: 0;">$80</h3>
                         <div style="display: flex;">
                           <button id="btAddToCart">Add To Cart</button>
-                          <button style="background-color: transparent;"><img src="Images/icons/wishlist_icon_32.png" alt="" srcset=""></button>
+                          
                         </div>
                     </div>
                 </div>
-                <div class="items-trending">
+                <div class="items-trending items">
                   <img src="Images/items/image1.png" alt="item1" srcset=""/>
                   <div class="item-div">
-                      <h2>Puma Sneakers</h2>
+                    <div class="flex">  
+                      <a href=""><h2>Puma Sneakers</h2></a>
+                      <span class="heart"></span>
+                    </div> 
                       <h3>$80</h3>
-                      
+                      <button id="btAddToCart">Add To Cart</button>
                   </div>
                 </div>
-                <div class="items-trending">
+                <div class="items-trending items">
                   <img src="Images/items/image1.png" alt="item1" srcset=""/>
                   <div class="item-div">
-                      <h2>Puma Sneakers</h2>
+                    <div class="flex">  
+                      <a href=""><h2>Puma Sneakers</h2></a>
+                      <span class="heart"></span>
+                    </div> 
                       <h3>$80</h3>
                       <button id="btAddToCart">Add To Cart</button>
                   </div>
@@ -189,8 +246,37 @@
             </div>
         </div>
       </div>
-
-    <footer></footer>
-    <script src="js/footer.js"></script>
+      <footer class="foot_main flex-container">
+        <ul class="ul-foot">
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="#">T&C</a></li>
+        <li> <a href="#">Site Map</a></li>
+        </ul>
+        <div class="center">
+            <h3 class="ft_heading">Community</h3>
+            <ul class="flex-container">
+                <li><a href="#"><img class="menu" src="Images/icons/facebook_logo.png" alt="Facebook"/></a></li>
+                <li><a href="#"><img class="menu" src="Images/icons/instagram_logo.png" alt="Instagram"/></a></li>
+                <li><a href="#"><img class="menu" src="Images/icons/twitter_logo.png" alt="Twitter"/></a></li>
+                <li><a href="#"><img class="menu" src="Images/icons/linkedin_logo.png" alt="LinkedIn"/></a></li>
+            </ul>
+        </div>
+        <div class="center">
+            <h3 class="ft_heading">Support</h3>
+                <ul class="ul-foot">
+                    <li>Support Center</li>
+                    <li>Status Page</li>
+                </ul>
+        </div>
+      </footer>
 </body>
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script>
+  $(function () {
+      $(".heart").on("click", function () {
+          $(this).toggleClass("is-active");
+      });
+  });
+</script>
 </html>

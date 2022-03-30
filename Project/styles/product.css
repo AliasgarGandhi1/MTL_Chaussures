@@ -3,9 +3,13 @@
 .p-container{
     padding:0.01em 16px;
 }
+
 .p-container:after,.p-container:before{
-    content:"";display:table;clear:both;
+    content:"";
+    display:table;
+    clear:both;
 }
+
 #Men, #Women, #Kids{
   background-color: whitesmoke;
 }
@@ -14,6 +18,7 @@
     font-size: large;
     margin-top: 10px;
 }
+
 .p-bar-item{
     background-color: aliceblue;
     padding: 10px;
@@ -69,11 +74,6 @@ div.card-container>p{
   transition-duration: 1s;
   background-position: -2800px 0;
 }
-.stage {
+/* .stage {
     flex: 1;
-     /* position: fixed; 
-     top: 0%;
-    left: 100%; 
-     -webkit-transform: translate(-50%, -50%);
-             transform: translate(-50%, -50%);  */
-  }
+} */
