@@ -1,4 +1,7 @@
+/*  Name: Chintan Anandkumar Patel
+    Student_ID: 2024318 */
 
+// HTML content has written by Aliasgar Gandhi.
 const header = ()=>{
     let header = document.querySelector('header');
 
@@ -13,20 +16,28 @@ const header = ()=>{
             </div>
         </span>
         <span id="header-flex">
-            <a href="addToCart.html">
-                <img id="img-header" class="cart" src="Images/icons/cart.ico" alt="">
-            </a>
-            <a href="">
-                <img id="img-header" src="Images/icons/menu_vertical.png" alt="">
+            <div class="">
+                <button id="btVerticleMenu">
+                    <img id="img-header" src="Images/icons/menu_vertical.png" alt="">
+                </button>
+                <div id="VMenu" class="verticle-menu">
+                    <a href="login.html" class="">Login</a>
+                    <a href="register.html" class="">Sign Up</a>
+                    <a href="contact.html" class="">Contact Us</a>
+                    <a href="about.html" class="">About Us</a>
+                </div>
+            </div>
+            <a href="cart.html">
+                <img id="img-header" class="cart" src="Images/icons/cart_32.png" alt="">
             </a>
         </span>
         </div>
         <nav class="navbar .navbar-expand-lg fixed-top">
             <ul class="navbar-nav">
                 <li class="menu"><a href="home.html">Home</a></li>
-                <li class="menu"><a href="men.html">Men</a></li>
-                <li class="menu"><a href="women.html">Women</a></li>
-                <li class="menu"><a href="kids.html">Kids</a></li>
+                <li class="menu"><a href="product.html?type=Men">Men</a></li>
+                <li class="menu"><a href="product.html?type=Women">Women</a></li>
+                <li class="menu"><a href="product.html?type=Kids">Kids</a></li>
                 <li class="menu"><a href="order.html">Orders</a></li>
                 <li class="menu"><a href="wishlist.html">Wishlist</a></li>
             </ul>

@@ -1,4 +1,7 @@
-window.onload = runScript;
+//   Name: Aliasgar Gandhi.
+//   Student ID: 2122332
+
+document.addEventListener('DOMContentLoaded', runScript);
 
 function runScript(){
     btn_verticle_menu = document.getElementById('btVerticleMenu');
@@ -14,3 +17,4 @@ function showVerticleMenu(){
     else
         menus.style.display = 'flex'
 }
+

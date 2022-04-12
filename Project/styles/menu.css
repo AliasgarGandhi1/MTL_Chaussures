@@ -57,9 +57,11 @@ li {
     background-color: rgb(241,237,236);
     transition: all .6s ease;
 }
+
 .menu:hover>a{
     color: rgb(237,66,48);
 }
+
 
 .verticle-menu{
     cursor:auto;

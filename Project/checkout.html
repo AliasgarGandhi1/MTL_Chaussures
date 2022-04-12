@@ -1,11 +1,17 @@
 <!DOCTYPE html>
+<!-- 
+  Name: Aliasgar Gandhi.
+  Student ID: 2122332
+ -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="shortcut icon" href="Images/icons/tab_img_32.png" style="background-color: white;" type="image/x-icon">
     <link rel="stylesheet" href="styles/pagestyle.css">
+    <script src="js/verticle_menu.js"></script>
+    <script src="js/menu.js"></script>
     <title>Checkout</title>
 </head>
 <body>
@@ -16,14 +22,15 @@
         <img id="cart-banner" src="Images/bgimages/cart_bg.jpg" alt="" srcset="">
     </div>
     <div class="wishlist-heading">
-        <h1 class="wishlist-heading">Checkout</h1>
+        <h1 class="title checkout-heading">Checkout</h1>
     </div>
 
     <div class="parent-container">
         <section class="sub-container">
             <form action="get">
-                <h2>Your Information: </h2>
-                <div>
+                
+                <fieldset id="fieldset-container">
+                    <legend><h2>Your Information</h2></legend>
                     <div class="input-container">
                         <input class="textbox" type="text" placeholder="Your Name" name="txtName" id="txtName"/>
                         <input class="textbox" type="text" placeholder="Email" name="txtEmail" id="txtEmail"/>
@@ -32,7 +39,7 @@
                         <input class="textbox" type="text" placeholder="Date of Birth" name="txtDOB" id="txtDOB"/>
                         <input class="textbox" type="text" placeholder="Phone Number" name="txtPhoneNo" id="txtPhoneNo"/>
                     </div>
-                </div>
+                </fieldset>
                 <div class="address-container">
                     <select class="textbox" id="ddCountry">
                         <option value="1" selected="">Select Country</option>
@@ -287,26 +294,28 @@
                 </div>
 
                 <div id="payment-info-container">
-                    <h2>Payment Information:</h2>
-                    <div class="margin-checkout-form">
-                        <label class="lbl-checkout" for="txtCardHolderName">Name of Card Holder</label>
-                        <input type="text" class="textbox" name="txtCardHolderName" id="txtCardHolderName" placeholder="Aliasgar Gandhi">
-                    </div>
+                    <!-- <fieldset id="fieldset-container"> -->
+                        <legend><h2>Payment Information</h2></legend>
+                        <div class="margin-checkout-form">
+                            <label class="lbl-checkout" for="txtCardHolderName">Name of Card Holder</label>
+                            <input type="text" class="textbox" name="txtCardHolderName" id="txtCardHolderName" placeholder="Aliasgar Gandhi">
+                        </div>
 
-                    <div class="margin-checkout-form">
-                        <label class="lbl-checkout" for="txtCardNo">Card Number</label>
-                        <input type="text" class="textbox" name="txtCardNo" id="txtCardNo" placeholder="XXXX-XXXX-XXXX-XXXX">
-                    </div>
+                        <div class="margin-checkout-form">
+                            <label class="lbl-checkout" for="txtCardNo">Card Number</label>
+                            <input type="text" maxlength="16" class="textbox" name="txtCardNo" id="txtCardNo" placeholder="XXXX-XXXX-XXXX-XXXX">
+                        </div>
 
-                    <div class="margin-checkout-form">
-                        <label class="lbl-checkout" for="txtExpDate">Expiration Date</label>
-                        <input type="text" class="textbox" name="txtExpDate" id="txtExpDate" placeholder="mm/yy">    
-                    </div>
-                    
-                    <div class="margin-checkout-form">
-                        <label class="lbl-checkout" for="txtSecurityCode">Security Code</label>
-                        <input type="text" class="textbox" name="txtSecurityCode" id="txtSecurityCode" placeholder="CCV">
-                    </div>
+                        <div class="margin-checkout-form">
+                            <label class="lbl-checkout" for="txtExpDate">Expiration Date</label>
+                            <input type="text" maxlength="4" class="textbox" name="txtExpDate" id="txtExpDate" placeholder="mm/yy">    
+                        </div>
+                        
+                        <div class="margin-checkout-form">
+                            <label class="lbl-checkout" for="txtSecurityCode">Security Code</label>
+                            <input maxlength="3" type="text" class="textbox" name="txtSecurityCode" id="txtSecurityCode" placeholder="CCV">
+                        </div>
+                    <!-- </fieldset> -->
                 </div>
             </form>
         </section>
@@ -356,7 +365,41 @@
         </section>
     </div>
 
-    <footer></footer>
-    <script src="js/footer.js"></script>
+    <footer class="foot_main">
+        <section class="flex-container">
+          <section>
+            <ul class="ul-foot">
+              <li><a class="visited link" href="contact.html">Contact Us</a></li>
+              <li><a class="visited link" href="about.html">About Us</a></li>
+              <li><a class="visited link" href="#">T&C</a></li>
+              <li> <a class="visited link" href="#">Site Map</a></li>
+              </ul>
+          </section>
+          <div class="center">
+              <h3 class="ft_heading">Community</h3>
+              <ul class="flex-container">
+                  <li><a href="https://www.facebook.com/aliasgar.gandhi.56/" target="_blank"><img class="community" src="Images/icons/facebook_logo.png" alt="Facebook"/></a></li>
+                  <li><a href="https://www.instagram.com/chintan1043/" target="_blank"><img class="community" src="Images/icons/instagram_logo.png" alt="Instagram"/></a></li>
+                  <li><a href="https://twitter.com/Aliasga82916892" target="_blank"><img class="community" src="Images/icons/twitter_logo.png" alt="Twitter"/></a></li>
+                  <li><a href="https://www.linkedin.com/in/chintan-patel-b9b959104/" target="_blank"><img class="community" src="Images/icons/linkedin_logo.png" alt="LinkedIn"/></a></li>
+              </ul>
+          </div>
+          <div class="center">
+              <h3 class="ft_heading">Support</h3>
+                  <ul class="ul-foot">
+                      <li><a class="link" href="contact.html">Support Center</a></li>
+                      <li><a class="link" href="about.html">Status Page</a></li>
+                  </ul>
+          </div>
+        </section>
+        <section>
+          <hr id="footer-hr" size="2px">
+        </section>
+        <section id="copyright">
+          <a class="link" href="http://420931va-gandhi.freecluster.eu/MTL_Chaussures/Project/checkout.html">Aliasgar Gandhi, 2122332</a>
+          <a class="link" href="">Chintan Anandkumar Patel, 2024318</a>
+          <p>&copy; Winter 2022</p>
+        </section>
+      </footer>
 </body>
 </html>

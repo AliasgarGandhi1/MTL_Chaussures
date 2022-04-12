@@ -1,3 +1,9 @@
+/* Name: Aliasgar Gandhi.
+   Student ID: 2122332 
+*/
+ 
+@import "menu.css";
+
 body{
   background-color: rgb(241,237,236);;
   width: 100%;
@@ -35,7 +41,7 @@ body{
 
 /* Search Button */
 #btn-search{
-  background-image: url('../Images/icons/search_icon.ico');
+  background-image: url('../Images/icons/search_icon_32.png');
   border: none;
   margin-bottom: -8px;
   padding: 0px;
@@ -47,7 +53,7 @@ body{
 /* Icons of cart and Menu. */
 #img-header{
   margin-top: 20px;
-  margin-right: 20px;
+  margin-right: 10px;
   justify-content: flex-end;
   border: thin solid  rgb(237,66,50);
   background-color: rgb(241,237,236);
@@ -226,7 +232,7 @@ ol, li {
   padding-bottom: 30px;
 }
 
-h1{
+.title{
   text-align: center;
   line-height: 35px;
   font-weight: 1000;
@@ -267,10 +273,9 @@ p{
 }
 
 .items>img{
-  width: 50%;
-  height: 25vh;
-  top: 1;
-  padding-left: 25%;
+  width: 65%;
+  height: fit-content;
+  padding-left: 17%;
 }
 
 .item-div{
@@ -357,23 +362,6 @@ a>h2{
   color: white;
 }
 
-/* Trending Items */
-/* .items-trending{
-  width: 350px;
-  background-color: #fff;
-  border: thin solid #ccc;
-  border-radius: 5%;
-  margin: 8px;
-  height: 50vh;
-} */
-/* 
-.items-trending>img{
-  width: 50%;
-  height: 25vh;
-  top: 1;
-  padding-left: 25%;
-} */
-
 #btAddToCart{
   background-color: white;
   border: thin solid #ccc;
@@ -405,7 +393,7 @@ a>h2{
   text-align: center;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
+  /* justify-content: center; */
   background-color: #ed4030;
   box-shadow: 0 15px 50px rgba(237,66,48,0.9);
   margin: 10px;
@@ -440,6 +428,11 @@ a>h2{
   opacity: 0.5;
 }
 
+#position-relative{
+  position: relative;
+  margin: auto;
+}
+
 .sub-number-container{
   display: flex;
   flex-wrap: wrap;
@@ -450,13 +443,26 @@ a>h2{
   top: -62%;
 }
 
-/* 
-@media screen and (min-width: 400px) {
+
+@media screen and (max-width: 800px) {
+
+  .numbers-container{
+    width: 80%;
+    text-align: center;
+    vertical-align:middle;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    background-color: #ed4030;
+    box-shadow: 0 15px 50px rgba(237,66,48,0.9);
+    margin: 10px;
+  }
 
   .numbers-container>div>h1{
     font-weight: 700;
     font-size: 150px;
-    margin-top: 25%;
+    vertical-align:middle;
+    margin-top: 15%;
     margin-bottom: 0px;
     line-height: 1;
     text-align: center;
@@ -466,11 +472,16 @@ a>h2{
     z-index: 1;
     opacity: 0.3;
   }
+
+  #position-relative{
+    position: relative;
+    margin: auto;
+  }
   
   .numbers-container>div>h3{
     font-family: Arial, Helvetica, sans-serif;
-    align-self: flex-start;
-    line-height: 1;
+    vertical-align:middle;
+    line-height: 0.5;
     font-size: 45px;
     margin-top: 0px;
     margin-bottom: 45px;
@@ -483,7 +494,9 @@ a>h2{
   }
 
   .sub-number-container{
-    top: -82%;
+    top: -50%;
+    justify-content: center;
+    /* align-items: center; */
   }
 
   .text-weight{
@@ -495,7 +508,15 @@ a>h2{
     font-size: 10px;
     font-weight: 100;
   }
-} */
+}
+
+@media screen and (max-width: 800px) {
+  .sub-number-container{
+    top: -60%;
+    justify-content: center;
+    /* align-items: center; */
+  }
+}
 
 .child-number-container{
   margin: 20px;
@@ -527,10 +548,15 @@ a>h2{
   width: 450px;
   margin-right: 10px;
 }
-/* 
+
 .brand-big-img:hover{
-  zoom: 105%;
-} */
+  border: thin solid #CCCCCC; 
+  border-radius: 90%;
+  transition: transform 420ms cubic-bezier(.165,.84,.44,1);
+  background-color: #fff;
+  box-shadow: 0 15px 30px 20px rgba(0,0,0,0.3);
+  transition: all .6s;
+} 
 
 .small-img-container{
   display: flex;
@@ -544,11 +570,21 @@ a>h2{
   margin-bottom: 10px;
 }
 
+.brand-small-img:hover{
+  border: thin solid #CCCCCC; 
+  border-radius: 70%;
+  transition: transform 420ms cubic-bezier(.165,.84,.44,1);
+  background-color: #fff;
+  box-shadow: 0 15px 30px 20px rgba(0,0,0,0.3);
+  transition: all .6s;
+} 
+
 
 
 /* Footer CSS */
 .foot_main{
   display: flex;
+  flex-direction: column;
   background-color: rgb(237,66,50);
 }
 
@@ -564,26 +600,82 @@ a>h2{
   font-weight: bold;
 }
 
-.ul-foot>li>a:hover{
-  text-decoration: underline;
-}
-
 .center{
   text-align: center;
 }
 
+#copyright{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+#copyright a{
+  font-size: 20px;
+  margin: 2px;
+}
+
+#footer-hr{
+  width: 95%;
+  align-items: center;
+  background-color: #fff;
+}
+
 .community:hover{
   transition: transform 420ms cubic-bezier(.165,.84,.44,1);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.5);
+  background-color: #ed4030;
   transition: all .6s;
 }
 
+.visited:visited{
+  color: lightblue;
+}
+
+.visited:link{
+  color: white;
+}
+
+.link:hover{
+  text-decoration: underline;
+}
+
+/* ================================================================================================ */
+
+/* Wishlist Page */
+
+.instock{
+  color: green;
+}
+
+.outofstock{
+  color: red;
+}
+
+td>h3, td>div>h6{
+  color: #777;
+}
+
+.wishlist-heading{
+  position: relative;
+  z-index: 0;
+  color: white;
+  font-size: 80px;
+  font-weight: 900;
+  bottom:100px;
+  right: -5%;;
+}
+
+
+/* ================================================================================================ */
 
 /* Add To Cart Page */
 
 /* Cart Image */
 #cart-banner{
-  z-index: 1;
+  z-index: 0;
   position: relative;
   height: 70vh;
   width: 100%;
@@ -593,8 +685,8 @@ a>h2{
   position: relative;
   z-index: 2;
   color: white;
-  font-size: 90px;
-  font-weight: 500;
+  font-size: 80px;
+  font-weight: 900;
   top:-100px;
   left: -260px;;
 }
@@ -625,8 +717,8 @@ table{
 }
 
 .cart-img{
-  height: 100px;
-  width: 100px;
+  height: fit-content;
+  width: 150px;
   margin: 10px;
 }
 
@@ -637,8 +729,9 @@ select{
 }
 
 .cancel-img{
-  height: 25px;
-  width: 25px;
+  background-image: url('../Images/icons/cancel_32.png');
+  height: 30px;
+  width: 30px;
 }
 
 /* Checkout button container */
@@ -664,30 +757,9 @@ select{
   cursor: pointer;
 }
 
-/* Wishlist Page */
 
-.instock{
-  color: green;
-}
 
-.outofstock{
-  color: red;
-}
-
-td>h3, td>div>h6{
-  color: #777;
-}
-
-.wishlist-heading{
-  position: relative;
-  z-index: 2;
-  color: white;
-  font-size: 70px;
-  font-weight: 500;
-  top:-90px;
-  left: -240px;;
-}
-
+/* ================================================================================================ */
 
 /* Order Page */
 
@@ -708,9 +780,26 @@ td>h3, td>div>h6{
 }
 
 .filter-container{
-  display: flex;
+  display: block;
   flex-wrap: wrap;
   flex-direction: column;
+}
+
+@media screen and (max-width: 1000px) {
+  .order-container{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+  }
+
+  .parent-filter-container{
+    margin-right: 20px;
+  }
+
+  #btSearchOrder{
+    position: relative;
+    left: 20px;
+  }
 }
 
 .order-item-container
@@ -744,6 +833,7 @@ td>h3, td>div>h6{
 
 #btSearchOrder{
   height: fit-content;
+  width: fit-content;
   background-color: #ed4030;
   color: #fff;
   margin: 0;
@@ -768,7 +858,8 @@ td>h3, td>div>h6{
 }
 
 .order-img{
-  height: 150px;
+  /* height: 150px; */
+  height: fit-content;
   width: 150px;
   margin: 10px 25px;
 }
@@ -795,6 +886,9 @@ select:focus{
   color: #ed4030;
 }
 
+
+/* ================================================================================================ */
+
 /* Checkout Page CSS */
 
 .sub-container{
@@ -804,9 +898,19 @@ select:focus{
   margin: 10px 5px 30px 10px;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 0.7cm;
-  width: 50%;
+  width: 700px;
   height: fit-content;
   box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.checkout-heading{
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: 80px;
+  font-weight: 900;
+  top:-100px;
+  right: 33%;;
 }
 
 .booking-container{
@@ -816,7 +920,7 @@ select:focus{
     margin: 10px 5px 30px 10px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 0.7cm;
-    width: 30%;
+    width: 400px;
     height: fit-content;
   
 }
@@ -831,6 +935,15 @@ select:focus{
   justify-content: space-evenly;
 }
 
+#fieldset-container{
+  border: thin solid #ccc;
+}
+
+@media screen and (max-width: 1000px) {
+  .input-container{
+    flex-wrap: wrap;
+  }
+}
 .textbox{
   padding: 20px 50px 20px 25px;
   margin: 10px;
@@ -846,7 +959,6 @@ select:focus{
 .input-container{
   display: flex;
   justify-content: space-evenly;
-  /* flex-wrap: wrap; */
 }
 
 .address-container{
@@ -875,6 +987,7 @@ select:focus{
   margin-top: 25px;
   margin-right: 25px;
   width: 87%;
+  
 }
 
 #heading-booking-summary{
@@ -894,4 +1007,114 @@ select:focus{
 
 #payment-info-container{
   padding-top: 30px;
+}
+
+
+/* ================================================================================================ */
+
+
+/* About us Page */
+
+.about-heading{
+    position: relative;
+    z-index: 0;
+    color: white;
+    font-size: 80px;
+    font-weight: 900;
+    bottom:100px;
+    right: 27%;
+}
+
+.about-us-container{
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+#about-us-img-container{
+  background-color: #fff;
+}
+
+#why-choos-us-container{
+  margin: 10px 10px 10px 30px;
+}
+
+#h1-choose-us{
+  font-size: 30px;
+  margin: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#h2-features{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #ed4030;
+}
+
+#main-img{
+  width: 400px;
+}
+
+.img-why-us{
+  height: 60px;
+  width: 60px;
+}
+
+.p_about_us{
+  margin: 5px;
+  text-align: left;
+}
+
+.p_section{
+  padding-left: 20px;
+}
+
+.margin-sections{
+  margin: 25px;
+}
+
+#mission-container{
+  background-color: #333;
+  padding: 60px 20%;
+  text-align: center;
+}
+
+#mission{
+  color: white;
+  font-size: 40px;
+}
+
+#mission-content{
+  color: #fff;
+  font-size: 20px;
+}
+
+#our-team-container{
+  display: flex;
+  justify-content: center;
+  margin: 100px 0px;
+}
+
+.team-img{
+  height: 250px;
+  width: 250px;
+  margin: 20px 40px 0px 0px;
+}
+
+.team-img:hover{
+  border: thin solid #CCCCCC; 
+  border-radius: 50%;
+  transition: transform 420ms cubic-bezier(.165,.84,.44,1);
+  background-color: #fff;
+  box-shadow: 0 15px 30px 20px rgba(0,0,0,0.3);
+  transition: all .6s; 
+}
+
+.team-img-content{
+  background-color: rgba(255,255,255,0.8);
+  position: relative;
+  top: -10%;
+  color: #000;
+  padding: 10px 20px;
+  box-shadow: 0 15px 30px 20px rgba(0,0,0,0.3);
+  margin: 0px 60px 20px 0px;
 }

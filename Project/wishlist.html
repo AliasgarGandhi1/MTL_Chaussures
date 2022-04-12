@@ -1,10 +1,17 @@
 <!DOCTYPE html>
+<!-- 
+  Name: Aliasgar Gandhi.
+  Student ID: 2122332
+ -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="Images/icons/tab_img.ico" style="background-color: white;" type="image/x-icon">
+    <link rel="shortcut icon" href="Images/icons/tab_img_32.png" style="background-color: white;" type="image/x-icon">
+    <script src="js/verticle_menu.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/delete_item.js"></script>
     <link rel="stylesheet" href="styles/pagestyle.css">
     <link rel="stylesheet" href="styles/menu.css">
     <title>Wishlist</title>
@@ -13,7 +20,7 @@
   <header></header>
   <script src="js/header.js"></script>
   
-      <div>
+      <section>
           <section>
             <div id="cart-banner">
               <img id="cart-banner" src="Images/bgimages/cart_bg.jpg" alt="" srcset="">
@@ -22,7 +29,7 @@
               <h1 class="wishlist-heading">Wishlist</h1>
             </div>
           </section>
-      </div>
+      </section>
 
       <div id="cart-container">
       <!-- Table Which Contains Items -->
@@ -36,23 +43,25 @@
           <th><h3>Total</h3></th>
           <th><h3>Actions</h3></th>
         </tr>
-        <tr>
-          <td><button><img class="cancel-img" src="Images/icons/cancel_32.png" alt="" srcset=""></button></td>
+        <tr class="delete-row">
+          <td>
+            <button id="delete-item" class="cancel-img" name="btn1"></button>
+          </td>
           <td class="flex-container">
             <div>
-              <img class="cart-img" src="Images/items/image1.png" alt="" />
+              <img class="cart-img" src="Images/Loafers/loafers2.avif" alt="" />
             </div>
             <div>
-                <a href="product.html">
+                <a href="product_detail.html?imgtype=Loafers&imgname=ALDO Loafers FX 1&imgprice=69.99&imgpath=Images/Loafers/loafers2.avif">
                   <h4 id="product-name">
-                    Puma Snekers
+                    ALDO Loafers FX 1
                 </h4>
                 </a>
-                <h6>1 Piece</h6>
+                <h6>2 Piece</h6>
             </div>
           </td>
           <td>
-            <h3>$49.99</h3>
+            <h3>$69.99</h3>
           </td>
           <td>
               <h4 class="instock">In Stock</h4>
@@ -66,19 +75,21 @@
               <option value="5">5</option>
             </select>
           </td>
-          <td><h3>$49.99</h3></td>
-          <td><button id="btAddToCart">Add To Cart</button></td>
+          <td><h3>$69.99</h3></td>
+          <td><a href="cart.html"><button id="btAddToCart">Add To Cart</button></a></td>
         </tr>
-        <tr>
-            <td><button><img class="cancel-img" src="Images/icons/cancel_32.png" alt="" srcset=""></button></td>
+        <tr class="delete-row">
+            <td>
+              <button id="delete-item" class="cancel-img" name="btn2"></button>
+            </td>
             <td class="flex-container">
               <div>
-                <img class="cart-img" src="Images/items/image1.png" alt="" />
+                <img class="cart-img" src="Images/Loafers/loafers1.avif" alt="" />
               </div>
               <div>
-                <a href="product.html">
+                <a href="product_detail.html?imgtype=Loafers&imgname=Dr. Martens |46| 3 Eye&imgprice=49.99&imgpath=Images/Loafers/loafers1.avif">
                   <h4 id="product-name">
-                    Puma Snekers
+                    Dr. Martens |46| 3 Eye
                 </h4>
                 </a>
                 <h6>1 Piece</h6>
@@ -99,26 +110,34 @@
                 <option value="5">5</option>
               </select>
             </td>
-            <td><h3>$49.99</h3></td>
-            <td><button id="btAddToCart">Add To Cart</button></td>
+            <td>
+              <h3>$49.99</h3>
+            </td>
+            <td>
+              <a href="cart.html">
+                <button id="btAddToCart">Add To Cart</button>
+              </a>
+            </td>
           </tr>
-          <tr>
-            <td><button><img class="cancel-img" src="Images/icons/cancel_32.png" alt="" srcset=""></button></td>
+          <tr class="delete-row">
+            <td>
+              <button id="delete-item" class="cancel-img" name="btn3"></button>
+            </td>
             <td class="flex-container">
               <div>
-                <img class="cart-img" src="Images/items/image1.png" alt="" />
+                <img class="cart-img" src="Images/Loafers/loafers4.avif" alt="" />
               </div>
               <div>
-                <a href="product.html">
+                <a href="product_detail.html?imgtype=Loafers&imgname=Luis Vuitton Loafers&imgprice=109.99&imgpath=Images/Loafers/loafers4.avif">
                   <h4 id="product-name">
-                    Puma Snekers
+                    Luis Vuitton Loafers
                 </h4>
                 </a>
                 <h6>1 Piece</h6>
               </div>
             </td>
             <td>
-              <h3>$49.99</h3>
+              <h3>$109.99</h3>
             </td>
             <td>
                 <h4 class="outofstock">Out Of Stock</h4>
@@ -132,13 +151,51 @@
                 <option value="5">5</option>
               </select>
             </td>
-            <td><h3>$49.99</h3></td>
-            <td><button id="btAddToCart">Add To Cart</button></td>
+            <td><h3>$109.99</h3></td>
+            <td>
+              <a href="cart.html">
+                <button id="btAddToCart">Add To Cart</button>
+              </a>
+            </td>
           </tr>
       </table>
       </div>
 
-    <footer></footer>
-    <script src="js/footer.js"></script>
+      <footer class="foot_main">
+        <section class="flex-container">
+          <section>
+            <ul class="ul-foot">
+              <li><a class="visited link" href="contact.html">Contact Us</a></li>
+              <li><a class="visited link" href="about.html">About Us</a></li>
+              <li><a class="visited link" href="#">T&C</a></li>
+              <li> <a class="visited link" href="#">Site Map</a></li>
+              </ul>
+          </section>
+          <div class="center">
+              <h3 class="ft_heading">Community</h3>
+              <ul class="flex-container">
+                  <li><a href="https://www.facebook.com/aliasgar.gandhi.56/" target="_blank"><img class="community" src="Images/icons/facebook_logo.png" alt="Facebook"/></a></li>
+                  <li><a href="https://www.instagram.com/chintan1043/" target="_blank"><img class="community" src="Images/icons/instagram_logo.png" alt="Instagram"/></a></li>
+                  <li><a href="https://twitter.com/Aliasga82916892" target="_blank"><img class="community" src="Images/icons/twitter_logo.png" alt="Twitter"/></a></li>
+                  <li><a href="https://www.linkedin.com/in/chintan-patel-b9b959104/" target="_blank"><img class="community" src="Images/icons/linkedin_logo.png" alt="LinkedIn"/></a></li>
+              </ul>
+          </div>
+          <div class="center">
+              <h3 class="ft_heading">Support</h3>
+                  <ul class="ul-foot">
+                      <li><a class="link" href="contact.html">Support Center</a></li>
+                      <li><a class="link" href="about.html">Status Page</a></li>
+                  </ul>
+          </div>
+        </section>
+        <section>
+          <hr id="footer-hr" size="2px">
+        </section>
+        <section id="copyright">
+          <a class="link" href="http://420931va-gandhi.freecluster.eu/MTL_Chaussures/Project/wishlist.html">Aliasgar Gandhi, 2122332</a>
+          <a class="link" href="http://420931va-patell.freecluster.eu/MTL_Chaussures/Project/wishlist.html">Chintan Anandkumar Patel, 2024318</a>
+          <p>&copy; Winter 2022</p>
+        </section>
+      </footer>
 </body>
 </html>
